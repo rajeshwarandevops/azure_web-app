@@ -20,7 +20,7 @@ steps:
       script: |
         echo  '$(System.DefaultWorkingDirectory)'
         dir
-         dir subfoldername
+        dir subfoldername
 
         
   # - task: ArchiveFiles@2
