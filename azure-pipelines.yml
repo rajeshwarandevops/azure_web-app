@@ -26,5 +26,5 @@ steps:
       azureSubscription: 'web_app-connection'
       appType: 'webApp'
       appName: 'rajeshwarwebapp'
-      package: '$(System.DefaultWorkingDirectory)/*.zip'
+      package: '$(System.DefaultWorkingDirectory)/**/*.zip'
       deploymentMethod: 'auto'
