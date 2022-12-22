@@ -24,18 +24,18 @@ steps:
         dir fine-best-free-app-landing-page
 
         
-  # - task: ArchiveFiles@2
-  #   inputs:
-  #     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
-  #     includeRootFolder: false
-  #     archiveType: 'zip'
-  #     archiveFile: '$(System.DefaultWorkingDirectory)/$(Build.BuildId).zip'
-  #     replaceExistingArchive: true
+  - task: ArchiveFiles@2
+    inputs:
+      rootFolderOrFile: '$(System.DefaultWorkingDirectory)/fine-best-free-app-landing-page'
+      includeRootFolder: false
+      archiveType: 'zip'
+      archiveFile: '$(System.DefaultWorkingDirectory)/$(Build.BuildId).zip'
+      replaceExistingArchive: true
 
-  # - task: AzureWebApp@1
-  #   inputs:
-  #     azureSubscription: 'web_app-connection'
-  #     appType: 'webApp'
-  #     appName: 'rajeshwarwebapp'
-  #     package: '$(System.DefaultWorkingDirectory)/*.zip'
-  #     deploymentMethod: 'auto'
+  - task: AzureWebApp@1
+    inputs:
+      azureSubscription: 'web_app-connection'
+      appType: 'webApp'
+      appName: 'rajeshwarwebapp'
+      package: '$(System.DefaultWorkingDirectory)/*.zip'
+      deploymentMethod: 'auto'
