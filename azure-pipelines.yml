@@ -11,20 +11,30 @@ trigger:
 pool:
   name: Default #Testing with self-hosted agent
 
+    
+  
 
-steps:
-  - task: ArchiveFiles@2
+steps: 
+  - task: CmdLine@2
     inputs:
-      rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
-      includeRootFolder: false
-      archiveType: 'zip'
-      archiveFile: '$(System.DefaultWorkingDirectory)/$(Build.BuildId).zip'
-      replaceExistingArchive: true
+      script: |
+        echo  '$(System.DefaultWorkingDirectory)'
+        dir
+         dir subfoldername
 
-  - task: AzureWebApp@1
-    inputs:
-      azureSubscription: 'web_app-connection'
-      appType: 'webApp'
-      appName: 'rajeshwarwebapp'
-      package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-      deploymentMethod: 'auto'
+        
+  # - task: ArchiveFiles@2
+  #   inputs:
+  #     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+  #     includeRootFolder: false
+  #     archiveType: 'zip'
+  #     archiveFile: '$(System.DefaultWorkingDirectory)/$(Build.BuildId).zip'
+  #     replaceExistingArchive: true
+
+  # - task: AzureWebApp@1
+  #   inputs:
+  #     azureSubscription: 'web_app-connection'
+  #     appType: 'webApp'
+  #     appName: 'rajeshwarwebapp'
+  #     package: '$(System.DefaultWorkingDirectory)/*.zip'
+  #     deploymentMethod: 'auto'
