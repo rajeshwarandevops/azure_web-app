@@ -11,6 +11,7 @@ trigger:
 pool:
   name: Default #Testing with self-hosted agent
 
+
     
   
 
@@ -20,7 +21,7 @@ steps:
       script: |
         echo  '$(System.DefaultWorkingDirectory)'
         dir
-        dir subfoldername
+        dir fine-best-free-app-landing-page
 
         
   # - task: ArchiveFiles@2
