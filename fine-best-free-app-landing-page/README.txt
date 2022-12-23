@@ -1,24 +1,29 @@
-Free Site License:
-------------------
+CICD -One click webapp deployment
 
-CC 3.0 All of the site templates we create for WebThemez are licensed under the Creative Commons Attribution 4.0 License, which means you can:
- - You can use our templates for both personal and commercial projects. 
- - You are NOT allowed to remove the back link to WebThemez.com in templates unless you purchased a license. 
- - You can update /modify/customize the website to fit your project needs. 
- - You cannot claim credit or ownership for any of the files found on webthemez.com. 
- - You cannot redistribute, resell, license, or sub-license any of the files found on webthemez.com. 
+This code used for hosting azure webapp with Free tier deployment using azure devops CICD approach
 
- - No Support
- - No Php files ( contact form does not work)
- - No Updates
+Pre-prerequisite
+
+1.Azure Account
+2.existing resource group
+3.existing azure App Service plan (default page)
+4.Azure -service connecting (azure devops to existing resource group in which App Service plan deployed)
+8.Github-Service connecting for github repo 
 
 
-Credits :
---------- 
+CICD:
 
-=> Design & developed: "WebThemez"  http://webthemez.com 
-=> Bootstrap : http://getbootstrap.com/
-=> Fontawesome : https://fortawesome.github.io/Font-Awesome/
-=> Fonts : https://www.google.com/fonts
-=> Images : https://unsplash.com/ , https://www.pexels.com/ and https://pixabay.com/
-=> Carousel : http://owlgraphic.com/owlcarousel/
+Please refer azure-pipelines.yml for CICD -Work flow 
+Reach me @kbrajeshwaran@gmail.com for any information if required related to this one click CICD deployment
+
+Main Branch : Protected with branch policy to prevent direct push in to main branch
+Pr request: Pr is required for merging from other branches to Main branch
+
+Webapp url:   https://rajeshwarwebapp.azurewebsites.net/  
+
+( Custom domain only support  D1 App Service plan plan and I'm using Free F1 plan so custom domain is not possible
+if required please choose D1 App Service plan (Minimum) to host webapp using custom domain name)
+
+
+
+
