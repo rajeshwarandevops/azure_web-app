@@ -19,9 +19,9 @@ Reach me @kbrajeshwaran@gmail.com for any information if required related to thi
 Main Branch : Protected with branch policy to prevent direct push in to main branch
 Pr request: Pr is required for merging from other branches to Main branch
 
-Webapp url:   https://rajeshwarwebapp.azurewebsites.net/  
+Webapp url:   https://rajeshwarwebapp.azurewebsites.net
 
-( Custom domain only support  D1 App Service plan plan and I'm using Free F1 plan so custom domain is not possible
+(Custom domain only support  D1 App Service plan plan and I'm using Free F1 plan so custom domain is not possible
 if required please choose D1 App Service plan (Minimum) to host webapp using custom domain name)
 
 
