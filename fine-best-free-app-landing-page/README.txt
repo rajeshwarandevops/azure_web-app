@@ -1,4 +1,4 @@
-CICD -One click webapp deployment
+"CICD -One click azure webapp deployment"
 
 This code used for hosting azure webapp with Free tier deployment using azure devops CICD approach
 
