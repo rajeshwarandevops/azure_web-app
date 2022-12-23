@@ -17,7 +17,7 @@ Pre-prerequisite
 CICD:
 
 Please refer azure-pipelines.yml for CICD -Work flow 
-Reach me @kbrajeshwaran@gmail.com for any information if required related to this one click CICD deployment
+Reach me @kbrajeshwaran@gmail.com for any information related to this one click CICD deployment
 
 Main Branch : Protected with branch policy to prevent direct push in to main branch
 Pr request: Pr is required for merging from other branches to Main branch
