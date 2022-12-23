@@ -6,8 +6,7 @@
 trigger:
 - main
 
-#pool:
-#vmImage: ubuntu-latest
+
 pool:
   name: Default #Testing with self-hosted agent
 
